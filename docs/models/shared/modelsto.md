@@ -1,0 +1,12 @@
+# ModelsTo
+
+
+## Fields
+
+| Field                                                                         | Type                                                                          | Required                                                                      | Description                                                                   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `bcc`                                                                         | list[[ModelsCopyTo](../../models/shared/modelscopyto.md)]                     | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `cc`                                                                          | list[[ModelsCopyTo](../../models/shared/modelscopyto.md)]                     | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `custom_fields`                                                               | [Optional[ModelsToCustomFields]](../../models/shared/modelstocustomfields.md) | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `email`                                                                       | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `name`                                                                        | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |

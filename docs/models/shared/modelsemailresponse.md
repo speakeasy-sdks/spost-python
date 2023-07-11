@@ -1,0 +1,12 @@
+# ModelsEmailResponse
+
+
+## Fields
+
+| Field                                                                         | Type                                                                          | Required                                                                      | Description                                                                   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| `error_code`                                                                  | [Optional[ModelsEmailErrorCode]](../../models/shared/modelsemailerrorcode.md) | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `message`                                                                     | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `message_id`                                                                  | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `submitted_at`                                                                | *Optional[int]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |
+| `to`                                                                          | *Optional[str]*                                                               | :heavy_minus_sign:                                                            | N/A                                                                           |
