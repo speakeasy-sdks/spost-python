@@ -2,7 +2,7 @@
 
 from .sdkconfiguration import SDKConfiguration
 from sendpost import utils
-from sendpost.models import operations
+from sendpost.models import errors, operations
 
 class SubaccountEmail:
     sdk_configuration: SDKConfiguration
@@ -35,6 +35,8 @@ class SubaccountEmail:
         if http_res.status_code == 200:
             if utils.match_content_type(content_type, '*/*'):
                 res.body = http_res.content
+            else:
+                raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
         elif http_res.status_code in [401, 422, 500]:
             pass
 
@@ -65,6 +67,8 @@ class SubaccountEmail:
         if http_res.status_code == 200:
             if utils.match_content_type(content_type, '*/*'):
                 res.body = http_res.content
+            else:
+                raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
         elif http_res.status_code in [401, 422, 500]:
             pass
 

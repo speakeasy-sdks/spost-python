@@ -5,6 +5,7 @@ pylintrc
 setup.py
 src/sendpost/__init__.py
 src/sendpost/models/__init__.py
+src/sendpost/models/errors/sdkerror.py
 src/sendpost/utils/__init__.py
 src/sendpost/utils/retries.py
 src/sendpost/utils/utils.py
@@ -20,6 +21,7 @@ src/sendpost/models/shared/models_replyto.py
 src/sendpost/models/shared/models_from.py
 src/sendpost/models/shared/models_attachment.py
 src/sendpost/models/shared/__init__.py
+src/sendpost/models/errors/__init__.py
 docs/sdks/sendpost/README.md
 docs/sdks/subaccountemail/README.md
 USAGE.md
