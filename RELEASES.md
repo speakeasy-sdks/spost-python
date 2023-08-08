@@ -103,3 +103,11 @@ Based on:
 - Speakeasy CLI 1.68.3 (2.81.1) https://github.com/speakeasy-api/speakeasy
 ### Releases
 - [PyPI v1.8.0] https://pypi.org/project/sendpost/1.8.0 - .
+
+## 2023-08-08 00:35:32
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.69.1 (2.82.0) https://github.com/speakeasy-api/speakeasy
+### Releases
+- [PyPI v1.9.0] https://pypi.org/project/sendpost/1.9.0 - .
