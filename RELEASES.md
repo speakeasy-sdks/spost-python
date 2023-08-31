@@ -161,3 +161,13 @@ Based on:
 - [python v1.11.1] .
 ### Releases
 - [PyPI v1.11.1] https://pypi.org/project/sendpost/1.11.1 - .
+
+## 2023-08-31 00:30:37
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.76.0 (2.89.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v1.12.0] .
+### Releases
+- [PyPI v1.12.0] https://pypi.org/project/sendpost/1.12.0 - .
