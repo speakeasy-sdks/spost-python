@@ -1,4 +1,4 @@
-# subaccount_email
+# SubaccountEmail
 
 ### Available Operations
 

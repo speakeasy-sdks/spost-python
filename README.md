@@ -36,7 +36,7 @@ if res.body is not None:
 ## Available Resources and Operations
 
 
-### [subaccount_email](docs/sdks/subaccountemail/README.md)
+### [SubaccountEmail](docs/sdks/subaccountemail/README.md)
 
 * [email_router_send_email](docs/sdks/subaccountemail/README.md#email_router_send_email) - Send Email To Contacts
 * [email_router_send_email_with_template](docs/sdks/subaccountemail/README.md#email_router_send_email_with_template) - Send Email To Contacts With Template
