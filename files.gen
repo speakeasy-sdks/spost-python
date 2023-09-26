@@ -22,8 +22,6 @@ src/sendpost/models/shared/models_from.py
 src/sendpost/models/shared/models_attachment.py
 src/sendpost/models/shared/__init__.py
 src/sendpost/models/errors/__init__.py
-docs/sdks/sendpost/README.md
-docs/sdks/subaccountemail/README.md
 USAGE.md
 docs/models/operations/emailroutersendemailrequest.md
 docs/models/operations/emailroutersendemailresponse.md
@@ -41,4 +39,6 @@ docs/models/shared/modelscopyto.md
 docs/models/shared/modelsreplyto.md
 docs/models/shared/modelsfrom.md
 docs/models/shared/modelsattachment.md
+docs/sdks/sendpost/README.md
+docs/sdks/subaccountemail/README.md
 .gitattributes

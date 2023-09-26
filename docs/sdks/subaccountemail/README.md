@@ -18,10 +18,10 @@ from sendpost.models import operations, shared
 s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body='quibusdam'.encode(),
+    request_body='corrupti'.encode(),
     x_send_post_mock_email=False,
-    x_send_post_mock_time_shift='unde',
-    x_sub_account_api_key='nulla',
+    x_send_post_mock_time_shift='illum',
+    x_sub_account_api_key='vel',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -55,8 +55,8 @@ from sendpost.models import operations, shared
 s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailWithTemplateRequest(
-    request_body='corrupti'.encode(),
-    x_sub_account_api_key='illum',
+    request_body='error'.encode(),
+    x_sub_account_api_key='deserunt',
 )
 
 res = s.subaccount_email.email_router_send_email_with_template(req)

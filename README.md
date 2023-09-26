@@ -10,8 +10,6 @@ pip install sendpost
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```python
 import sendpost
 from sendpost.models import operations, shared
@@ -19,10 +17,10 @@ from sendpost.models import operations, shared
 s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body='corrupti'.encode(),
+    request_body='quibusdam'.encode(),
     x_send_post_mock_email=False,
-    x_send_post_mock_time_shift='provident',
-    x_sub_account_api_key='distinctio',
+    x_send_post_mock_time_shift='unde',
+    x_sub_account_api_key='nulla',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -41,6 +39,32 @@ if res.body is not None:
 * [email_router_send_email](docs/sdks/subaccountemail/README.md#email_router_send_email) - Send Email To Contacts
 * [email_router_send_email_with_template](docs/sdks/subaccountemail/README.md#email_router_send_email_with_template) - Send Email To Contacts With Template
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `Next` method that can be called to pull down the next group of results. If the
+return value of `Next` is `None`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
