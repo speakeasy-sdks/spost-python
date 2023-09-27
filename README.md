@@ -34,7 +34,7 @@ if res.body is not None:
 ## Available Resources and Operations
 
 
-### [SubaccountEmail](docs/sdks/subaccountemail/README.md)
+### [subaccount_email](docs/sdks/subaccountemail/README.md)
 
 * [email_router_send_email](docs/sdks/subaccountemail/README.md#email_router_send_email) - Send Email To Contacts
 * [email_router_send_email_with_template](docs/sdks/subaccountemail/README.md#email_router_send_email_with_template) - Send Email To Contacts With Template
@@ -43,8 +43,6 @@ if res.body is not None:
 
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
@@ -58,8 +56,6 @@ returned response object will have a `Next` method that can be called to pull do
 return value of `Next` is `None`, then there are no more pages to be fetched.
 
 Here's an example of one such pagination call:
-
-
 <!-- End Pagination -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
