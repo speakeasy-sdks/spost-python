@@ -27,6 +27,7 @@ res = s.subaccount_email.email_router_send_email(req)
 
 if res.body is not None:
     # handle response
+    pass
 ```
 
 ### Parameters
@@ -62,6 +63,7 @@ res = s.subaccount_email.email_router_send_email_with_template(req)
 
 if res.body is not None:
     # handle response
+    pass
 ```
 
 ### Parameters
