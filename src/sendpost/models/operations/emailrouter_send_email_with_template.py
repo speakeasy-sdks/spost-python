@@ -6,7 +6,6 @@ import requests as requests_http
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class EmailRouterSendEmailWithTemplateRequest:
     request_body: bytes = dataclasses.field(metadata={'request': { 'media_type': '*/*' }})
@@ -14,7 +13,6 @@ class EmailRouterSendEmailWithTemplateRequest:
     x_sub_account_api_key: str = dataclasses.field(metadata={'header': { 'field_name': 'X-SubAccount-ApiKey', 'style': 'simple', 'explode': False }})
     r"""Sub-Account API Key"""
     
-
 
 
 

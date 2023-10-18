@@ -6,7 +6,6 @@ from ..shared import models_emailerrorcode as shared_models_emailerrorcode
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class ModelsEmailResponse:
     error_code: Optional[shared_models_emailerrorcode.ModelsEmailErrorCode] = dataclasses.field(default=None)

@@ -6,7 +6,6 @@ import requests as requests_http
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class EmailRouterSendEmailRequest:
     request_body: bytes = dataclasses.field(metadata={'request': { 'media_type': '*/*' }})
@@ -18,7 +17,6 @@ class EmailRouterSendEmailRequest:
     x_send_post_mock_time_shift: Optional[str] = dataclasses.field(default=None, metadata={'header': { 'field_name': 'X-SendPost-Mock-Time-Shift', 'style': 'simple', 'explode': False }})
     r"""Mock email time shift"""
     
-
 
 
 

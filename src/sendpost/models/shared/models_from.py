@@ -5,7 +5,6 @@ import dataclasses
 from typing import Optional
 
 
-
 @dataclasses.dataclass
 class ModelsFrom:
     email: Optional[str] = dataclasses.field(default=None)
