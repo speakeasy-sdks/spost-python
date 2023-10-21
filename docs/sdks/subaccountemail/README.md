@@ -20,7 +20,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
     request_body=':k13|`asY9'.encode(),
-    x_sub_account_api_key='Northeast',
+    x_sub_account_api_key='string',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -56,7 +56,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailWithTemplateRequest(
     request_body='9hY_GIO^\M'.encode(),
-    x_sub_account_api_key='Kina',
+    x_sub_account_api_key='string',
 )
 
 res = s.subaccount_email.email_router_send_email_with_template(req)

@@ -9,7 +9,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
     request_body=':k13|`asY9'.encode(),
-    x_sub_account_api_key='Northeast',
+    x_sub_account_api_key='string',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
