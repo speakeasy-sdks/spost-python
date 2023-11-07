@@ -2,38 +2,38 @@
 
 from __future__ import annotations
 import dataclasses
-from ..shared import models_attachment as shared_models_attachment
-from ..shared import models_from as shared_models_from
-from ..shared import models_replyto as shared_models_replyto
-from ..shared import models_to as shared_models_to
+from .models_attachment import ModelsAttachment
+from .models_from import ModelsFrom
+from .models_replyto import ModelsReplyTo
+from .models_to import ModelsTo
 from typing import List, Optional
 
 
 @dataclasses.dataclass
-class ModelsEmailMessageGroups:
+class Groups:
     pass
 
 
 @dataclasses.dataclass
-class ModelsEmailMessageHeaders:
+class Headers:
     pass
 
 
 @dataclasses.dataclass
 class ModelsEmailMessage:
     amp_body: Optional[str] = dataclasses.field(default=None)
-    attachments: Optional[List[shared_models_attachment.ModelsAttachment]] = dataclasses.field(default=None)
-    from_: Optional[shared_models_from.ModelsFrom] = dataclasses.field(default=None)
-    groups: Optional[ModelsEmailMessageGroups] = dataclasses.field(default=None)
-    headers: Optional[ModelsEmailMessageHeaders] = dataclasses.field(default=None)
+    attachments: Optional[List[ModelsAttachment]] = dataclasses.field(default=None)
+    from_: Optional[ModelsFrom] = dataclasses.field(default=None)
+    groups: Optional[Groups] = dataclasses.field(default=None)
+    headers: Optional[Headers] = dataclasses.field(default=None)
     html_body: Optional[str] = dataclasses.field(default=None)
     ippool: Optional[str] = dataclasses.field(default=None)
     pre_text: Optional[str] = dataclasses.field(default=None)
-    reply_to: Optional[shared_models_replyto.ModelsReplyTo] = dataclasses.field(default=None)
+    reply_to: Optional[ModelsReplyTo] = dataclasses.field(default=None)
     subject: Optional[str] = dataclasses.field(default=None)
     template: Optional[str] = dataclasses.field(default=None)
     text_body: Optional[str] = dataclasses.field(default=None)
-    to: Optional[List[shared_models_to.ModelsTo]] = dataclasses.field(default=None)
+    to: Optional[List[ModelsTo]] = dataclasses.field(default=None)
     track_clicks: Optional[bool] = dataclasses.field(default=None)
     track_opens: Optional[bool] = dataclasses.field(default=None)
     

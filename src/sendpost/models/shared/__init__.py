@@ -9,4 +9,4 @@ from .models_from import *
 from .models_replyto import *
 from .models_to import *
 
-__all__ = ["ModelsAttachment","ModelsCopyTo","ModelsCopyToCustomFields","ModelsEmailErrorCode","ModelsEmailMessage","ModelsEmailMessageGroups","ModelsEmailMessageHeaders","ModelsEmailResponse","ModelsFrom","ModelsReplyTo","ModelsTo","ModelsToCustomFields"]
+__all__ = ["CustomFields","Groups","Headers","ModelsAttachment","ModelsCopyTo","ModelsEmailErrorCode","ModelsEmailMessage","ModelsEmailResponse","ModelsFrom","ModelsReplyTo","ModelsTo","ModelsToCustomFields"]

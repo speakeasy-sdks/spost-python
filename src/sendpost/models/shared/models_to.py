@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 import dataclasses
-from ..shared import models_copyto as shared_models_copyto
+from .models_copyto import ModelsCopyTo
 from typing import List, Optional
 
 
@@ -13,8 +13,8 @@ class ModelsToCustomFields:
 
 @dataclasses.dataclass
 class ModelsTo:
-    bcc: Optional[List[shared_models_copyto.ModelsCopyTo]] = dataclasses.field(default=None)
-    cc: Optional[List[shared_models_copyto.ModelsCopyTo]] = dataclasses.field(default=None)
+    bcc: Optional[List[ModelsCopyTo]] = dataclasses.field(default=None)
+    cc: Optional[List[ModelsCopyTo]] = dataclasses.field(default=None)
     custom_fields: Optional[ModelsToCustomFields] = dataclasses.field(default=None)
     email: Optional[str] = dataclasses.field(default=None)
     name: Optional[str] = dataclasses.field(default=None)

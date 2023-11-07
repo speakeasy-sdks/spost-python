@@ -6,13 +6,13 @@ from typing import Optional
 
 
 @dataclasses.dataclass
-class ModelsCopyToCustomFields:
+class CustomFields:
     pass
 
 
 @dataclasses.dataclass
 class ModelsCopyTo:
-    custom_fields: Optional[ModelsCopyToCustomFields] = dataclasses.field(default=None)
+    custom_fields: Optional[CustomFields] = dataclasses.field(default=None)
     email: Optional[str] = dataclasses.field(default=None)
     name: Optional[str] = dataclasses.field(default=None)
     

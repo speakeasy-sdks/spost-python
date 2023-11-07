@@ -17,7 +17,7 @@ from sendpost.models import operations, shared
 s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body=':k13|`asY9'.encode(),
+    request_body='0x6B34FffDd5'.encode(),
     x_sub_account_api_key='string',
 )
 
@@ -33,7 +33,7 @@ if res.body is not None:
 ## Available Resources and Operations
 
 
-### [subaccount_email](docs/sdks/subaccountemail/README.md)
+### [.subaccount_email](docs/sdks/subaccountemail/README.md)
 
 * [email_router_send_email](docs/sdks/subaccountemail/README.md#email_router_send_email) - Send Email To Contacts
 * [email_router_send_email_with_template](docs/sdks/subaccountemail/README.md#email_router_send_email_with_template) - Send Email To Contacts With Template
@@ -63,8 +63,6 @@ Here's an example of one such pagination call:
 # Error Handling
 
 Handling errors in your SDK should largely match your expectations.  All operations return a response object or raise an error.  If Error objects are specified in your OpenAPI Spec, the SDK will raise the appropriate Error type.
-
-
 <!-- End Error Handling -->
 
 
@@ -78,21 +76,20 @@ You can override the default server globally by passing a server index to the `s
 
 | # | Server | Variables |
 | - | ------ | --------- |
-| 0 | `/api/v1` | None |
+| 0 | `https:///api/v1` | None |
 
 For example:
-
 
 ```python
 import sendpost
 from sendpost.models import operations, shared
 
 s = sendpost.Sendpost(
-    server_idx=0
+    server_idx=0,
 )
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body=':k13|`asY9'.encode(),
+    request_body='0x6B34FffDd5'.encode(),
     x_sub_account_api_key='string',
 )
 
@@ -108,17 +105,16 @@ if res.body is not None:
 
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 
-
 ```python
 import sendpost
 from sendpost.models import operations, shared
 
 s = sendpost.Sendpost(
-    server_url="/api/v1"
+    server_url="https:///api/v1",
 )
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body=':k13|`asY9'.encode(),
+    request_body='0x6B34FffDd5'.encode(),
     x_sub_account_api_key='string',
 )
 
@@ -148,8 +144,6 @@ http_client = requests.Session()
 http_client.headers.update({'x-custom-header': 'someValue'})
 s = sendpost.Sendpost(client: http_client)
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->

@@ -8,7 +8,7 @@ from sendpost.models import operations, shared
 s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
-    request_body=':k13|`asY9'.encode(),
+    request_body='0x6B34FffDd5'.encode(),
     x_sub_account_api_key='string',
 )
 
