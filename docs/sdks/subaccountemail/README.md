@@ -1,5 +1,5 @@
 # SubaccountEmail
-(*.subaccount_email*)
+(*subaccount_email*)
 
 ### Available Operations
 
@@ -40,7 +40,11 @@ if res.body is not None:
 ### Response
 
 **[operations.EmailRouterSendEmailResponse](../../models/operations/emailroutersendemailresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## email_router_send_email_with_template
 
@@ -76,4 +80,8 @@ if res.body is not None:
 ### Response
 
 **[operations.EmailRouterSendEmailWithTemplateResponse](../../models/operations/emailroutersendemailwithtemplateresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

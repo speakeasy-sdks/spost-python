@@ -11,6 +11,7 @@ class SubaccountEmail:
         self.sdk_configuration = sdk_config
         
     
+    
     def email_router_send_email(self, request: operations.EmailRouterSendEmailRequest) -> operations.EmailRouterSendEmailResponse:
         r"""Send Email To Contacts"""
         base_url = utils.template_url(*self.sdk_configuration.get_server_details())
@@ -42,6 +43,7 @@ class SubaccountEmail:
 
         return res
 
+    
     
     def email_router_send_email_with_template(self, request: operations.EmailRouterSendEmailWithTemplateRequest) -> operations.EmailRouterSendEmailWithTemplateResponse:
         r"""Send Email To Contacts With Template"""
