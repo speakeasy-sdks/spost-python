@@ -8,6 +8,7 @@ src/sendpost/utils/__init__.py
 src/sendpost/utils/retries.py
 src/sendpost/utils/utils.py
 src/sendpost/models/errors/sdkerror.py
+tests/helpers.py
 src/sendpost/models/operations/emailrouter_send_email.py
 src/sendpost/models/operations/emailrouter_send_email_with_template.py
 src/sendpost/models/shared/models_emailresponse.py
