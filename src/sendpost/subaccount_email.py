@@ -18,7 +18,7 @@ class SubaccountEmail:
         
         url = base_url + '/subaccount/email/'
         headers = utils.get_headers(request)
-        req_content_type, data, form = utils.serialize_request_body(request, "request_body", False, False, 'raw')
+        req_content_type, data, form = utils.serialize_request_body(request, operations.EmailRouterSendEmailRequest, "request_body", False, False, 'raw')
         if req_content_type not in ('multipart/form-data', 'multipart/mixed'):
             headers['content-type'] = req_content_type
         if data is None and form is None:
@@ -51,7 +51,7 @@ class SubaccountEmail:
         
         url = base_url + '/subaccount/email/template'
         headers = utils.get_headers(request)
-        req_content_type, data, form = utils.serialize_request_body(request, "request_body", False, False, 'raw')
+        req_content_type, data, form = utils.serialize_request_body(request, operations.EmailRouterSendEmailWithTemplateRequest, "request_body", False, False, 'raw')
         if req_content_type not in ('multipart/form-data', 'multipart/mixed'):
             headers['content-type'] = req_content_type
         if data is None and form is None:
