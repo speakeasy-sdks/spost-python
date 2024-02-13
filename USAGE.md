@@ -1,7 +1,7 @@
 <!-- Start SDK Example Usage [usage] -->
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost()
 

@@ -15,7 +15,7 @@ pip install sendpost
 
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost()
 
@@ -60,7 +60,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import errors, operations
 
 s = sendpost.Sendpost()
 
@@ -73,7 +73,7 @@ res = None
 try:
     res = s.subaccount_email.email_router_send_email(req)
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.body is not None:
@@ -99,7 +99,7 @@ You can override the default server globally by passing a server index to the `s
 
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost(
     server_idx=0,
@@ -123,7 +123,7 @@ if res.body is not None:
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost(
     server_url="https:///api/v1",

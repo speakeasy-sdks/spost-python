@@ -14,7 +14,7 @@ Send Email To Contacts
 
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost()
 
@@ -54,7 +54,7 @@ Send Email To Contacts With Template
 
 ```python
 import sendpost
-from sendpost.models import operations, shared
+from sendpost.models import operations
 
 s = sendpost.Sendpost()
 
