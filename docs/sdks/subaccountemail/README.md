@@ -20,7 +20,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
     request_body='0x6B34FffDd5'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -60,7 +60,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailWithTemplateRequest(
     request_body='0x5Ade99aeea'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = s.subaccount_email.email_router_send_email_with_template(req)

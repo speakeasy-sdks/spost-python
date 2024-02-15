@@ -21,7 +21,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
     request_body='0x6B34FffDd5'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -66,7 +66,7 @@ s = sendpost.Sendpost()
 
 req = operations.EmailRouterSendEmailRequest(
     request_body='0x6B34FffDd5'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = None
@@ -107,7 +107,7 @@ s = sendpost.Sendpost(
 
 req = operations.EmailRouterSendEmailRequest(
     request_body='0x6B34FffDd5'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = s.subaccount_email.email_router_send_email(req)
@@ -131,7 +131,7 @@ s = sendpost.Sendpost(
 
 req = operations.EmailRouterSendEmailRequest(
     request_body='0x6B34FffDd5'.encode(),
-    x_sub_account_api_key='string',
+    x_sub_account_api_key='<value>',
 )
 
 res = s.subaccount_email.email_router_send_email(req)

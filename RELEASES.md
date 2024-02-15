@@ -501,3 +501,13 @@ Based on:
 - [python v5.0.0] .
 ### Releases
 - [PyPI v5.0.0] https://pypi.org/project/sendpost/5.0.0 - .
+
+## 2024-02-15 00:14:26
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.180.0 (2.258.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v5.0.1] .
+### Releases
+- [PyPI v5.0.1] https://pypi.org/project/sendpost/5.0.1 - .
