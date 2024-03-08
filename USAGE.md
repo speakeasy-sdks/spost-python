@@ -15,5 +15,6 @@ res = s.subaccount_email.email_router_send_email(req)
 if res.body is not None:
     # handle response
     pass
+
 ```
 <!-- End SDK Example Usage [usage] -->

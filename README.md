@@ -29,6 +29,7 @@ res = s.subaccount_email.email_router_send_email(req)
 if res.body is not None:
     # handle response
     pass
+
 ```
 <!-- End SDK Example Usage [usage] -->
 
@@ -79,6 +80,7 @@ except errors.SDKError as e:
 if res.body is not None:
     # handle response
     pass
+
 ```
 <!-- End Error Handling [errors] -->
 
@@ -115,6 +117,7 @@ res = s.subaccount_email.email_router_send_email(req)
 if res.body is not None:
     # handle response
     pass
+
 ```
 
 
@@ -139,6 +142,7 @@ res = s.subaccount_email.email_router_send_email(req)
 if res.body is not None:
     # handle response
     pass
+
 ```
 <!-- End Server Selection [server] -->
 
