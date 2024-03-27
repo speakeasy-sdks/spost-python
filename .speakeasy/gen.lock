@@ -3,17 +3,17 @@ id: d537cf58-4bab-4ec0-b45e-8bb7030012cc
 management:
   docChecksum: bd32215591e3a4d83fe2c9a136049547
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 5.2.1
-  configChecksum: 26882614eede5558f0ae9fab126aeb86
+  speakeasyVersion: 1.227.0
+  generationVersion: 2.291.0
+  releaseVersion: 5.2.2
+  configChecksum: 4d8f1768cec1d2f7211792e00f437f42
   repoURL: https://github.com/speakeasy-sdks/spost-python.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/spost-python.git
   published: true
 features:
   python:
-    core: 4.5.1
+    core: 4.5.2
     globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
